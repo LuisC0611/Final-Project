@@ -5,6 +5,7 @@ import { auth, db, storage } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
+import chattybara from "../img/Chattybara.png";
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -62,7 +63,9 @@ const Register = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">4Geeks Chat Project</span>
+      <img className="chattybara" src={chattybara} alt="" />
+        <span className="logo">Chattybara</span>
+        <span className="title">4Geeks Final Project</span>
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
           <input required type="text" placeholder="display name" />

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import chattybara from "../img/Chattybara.png";
 
 const Login = () => {
   const [err, setErr] = useState(false);
@@ -22,7 +23,9 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">4Geeks Chat Project</span>
+      <img className="chattybara" src={chattybara} alt="" />
+        <span className="logo">Chattybara</span>
+        <span className="title">4Geeks Final Project</span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />

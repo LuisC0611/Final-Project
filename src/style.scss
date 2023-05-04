@@ -15,7 +15,7 @@
 }
 
 .formContainer {
-  background-color: #a7bcff;
+  background-color: #AC867F;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
         padding: 15px;
         border: none;
         width: 250px;
-        border-bottom: 1px solid #a7bcff;
+        border-bottom: 1px solid #AC867F;
         &::placeholder {
           color: rgb(175, 175, 175);
         }
@@ -88,7 +88,7 @@
 }
 
 .home {
-  background-color: #a7bcff;
+  background-color: #AC867F;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -322,4 +322,10 @@
       }
     }
   }
+}
+.chattybara {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
 }
